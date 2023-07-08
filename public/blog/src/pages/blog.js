@@ -1,25 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-const links = [
-  {
-    text: "Main",
-    url: "https://michaelgathara.com/",
-  },
-  {
-    text: "About",
-    url: "https://michaelgathara.com/about",
-  },
-  {
-    text: "Projects",
-    url: "https://michaelgathara.com/projects",
-  },
-  {
-    text: "Blog",
-    url: "https://michaelgathara.org",
-  },
-]
-
 const BlogPage = ({ data }) => (
   <div>
     <h1>My Blog Posts</h1>

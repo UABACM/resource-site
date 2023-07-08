@@ -39,5 +39,13 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blogs`,
+        path: `${__dirname}/content/blogs`,
+      },
+    },
+    `gatsby-transformer-remark`,
   ],
 }
