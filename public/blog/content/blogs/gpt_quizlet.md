@@ -1,0 +1,1 @@
+# How to use ChatGPT for studying
