@@ -1,5 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import * as styles from "../components/blog.module.css"
+import Navigation from "../components/Navigation"
 
 const links = [
   {
@@ -21,20 +23,18 @@ const links = [
 ]
 
 const BlogPage = ({ data }) => (
-  <div>
-    <h1>My Blog Posts</h1>
-    {data.allMarkdownRemark.edges.map(post => (
-      <div key={post.node.id}>
-        <h2>{post.node.frontmatter.title}</h2>
-        <small>Posted on {post.node.frontmatter.date}</small>
-        <br />
-        <br />
-        <Link to={post.node.frontmatter.path}>Read More</Link>
-        <br />
-        <br />
-        <hr />
-      </div>
-    ))}
+  <div className={styles.main}>
+    <Navigation />
+    <h1 className={styles.name}>A taste of tech</h1>
+    <div className={styles.blogs}>
+      {data.allMarkdownRemark.edges.map(post => (
+        <div key={post.node.id}>
+          <Link to={post.node.frontmatter.path} className={styles.blogTitle}>{post.node.frontmatter.title}</Link>
+          <p className={styles.blogDate}>{post.node.frontmatter.date}</p>
+          <hr />
+        </div>
+      ))}
+    </div>
   </div>
 )
 

@@ -1,0 +1,28 @@
+.blogs {
+    width: 100%;
+    text-align: center;
+}
+
+.main {
+    
+}
+
+.blogTitle {
+    text-decoration: underline;
+    color: white;
+    font-size: 35px;
+
+}
+
+.name {
+    color: #f30a49;
+    width: 100%;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: 2%;
+    margin-left: 10%;
+}
+
+.blogDate {
+    color: lightgrey;
+}
