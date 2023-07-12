@@ -7,6 +7,7 @@ export default class HTML extends React.Component {
       <html {...this.props.htmlAttributes}>
         <head>
             <title> Michael's Blog</title>
+            <meta name="description" content="Michael Gathara's blog about things"/>
             <meta property="og:image" content="https://michaelgathara.org/images/raindrop.webp" />
             <link rel="stylesheet" href="https://michaelgathara.com/assets/main.css"/>
             <meta name="keywords"
@@ -15,6 +16,7 @@ export default class HTML extends React.Component {
             <meta name="apple-mobile-web-app-status-bar-style" content="#000" />
             <meta name="theme-color" content="#000" />
             <meta name="author" content="Michael Gathara" />
+            <meta property="og:image" content="https://michaelgathara.com/images/minimal.png"/>
             <link rel="icon" href="https://michaelgathara.com/images/favicon.ico"/>
             
           {/* existing head component */}

@@ -1,11 +1,9 @@
-
-
 html {
     background-color: black;
-    
 }
 
 :root {
     --peach: #feaea3;
     --nameRed: #f30a49;
+    --blueGray: #799496;
 }

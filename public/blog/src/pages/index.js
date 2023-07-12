@@ -31,8 +31,8 @@ const BlogPage = ({ data }) => (
     <div className={styles.blogs}>
       {data.allMarkdownRemark.edges.map(post => (
         <div key={post.node.id}>
-          <Link to={post.node.frontmatter.path} className={styles.blogTitle}>{post.node.frontmatter.title}</Link>
-          {/* <p className={styles.blogDate}>{post.node.frontmatter.date}</p> */}
+          <Link to={post.node.frontmatter.path} id={styles.blogTitle} className={styles.blogTitle}>{post.node.frontmatter.title}</Link>
+          <p className={styles.blogDate}>{post.node.frontmatter.date}</p>
           <hr />
         </div>
       ))}

@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@350&display=swap');
 
+/* Applies to every page */
 body {
     font-family: 'Roboto Slab', serif;
 }
 
+/* For everything on the main page */
 .main {
     width: 100%;
     height: 100%;
+}
+
+.center {
+    text-align: center;
 }
 
 .name {
@@ -16,7 +22,6 @@ body {
     margin-top: 2%;
     letter-spacing: .15em;
     text-align: center;
-    /* font-family: 'Roboto Slab',serif; */
 }
 
 .homeLinkText {
@@ -35,13 +40,63 @@ body {
 }
 
 .blogTitle {
-    text-decoration: red dotted underline;
-    color: white;
+    text-decoration: #7A7D7D dotted underline;
+    color: #DBDBDB;
     font-size: 30px;
     margin-top: 5%;
+}
 
+.blogTitle:hover {
+    /* color: #7A7D7D; */
+    /* color: #F19953; Orange */
+    color: var(--blueGrey);
 }
 
 .blogDate {
     color: lightgrey;
+}
+
+/* For the actual blogs themselves */
+.blogPostTitle {
+    margin-top: 5%;
+    color: var(--nameRed);
+    text-align: center;
+}
+
+hr {
+    background-color: #DFF8EB;
+    width: 80%;
+    margin: auto;
+}
+
+.leftArrow {
+    font-size: 16px;
+}
+
+.goBack {
+    color: white;
+    /* text-align: center; */
+    margin-left: 10%;
+    text-decoration: none;    
+    /* background-color: #DFF8EB;
+    border-radius: 12px;
+    padding: .6%; */
+    font-size: 14px;
+}
+
+.goNext {
+    color: white;
+    text-decoration: none;
+    /* margin-right: 10%; */
+    text-align: center;
+    text-align: right;
+    font-size: 14px;
+}
+
+.blogPostDate {
+    text-align: center;
+}
+
+.blogPostContent {
+    margin-left: 5%;
 }
