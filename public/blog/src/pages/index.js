@@ -24,13 +24,15 @@ const links = [
 
 const BlogPage = ({ data }) => (
   <div className={styles.main}>
-    <Navigation />
-    <h1 className={styles.name}>A taste of tech</h1>
+    <br></br>
+    {/* <Navigation /> */}
+    <h1 className={styles.name}>A Taste of Tech</h1>
+    <p className={styles.homeLinkText}>A <Link to="https://michaelgathara.com" className={styles.homeLink}>Michael Gathara</Link> blog</p>
     <div className={styles.blogs}>
       {data.allMarkdownRemark.edges.map(post => (
         <div key={post.node.id}>
           <Link to={post.node.frontmatter.path} className={styles.blogTitle}>{post.node.frontmatter.title}</Link>
-          <p className={styles.blogDate}>{post.node.frontmatter.date}</p>
+          {/* <p className={styles.blogDate}>{post.node.frontmatter.date}</p> */}
           <hr />
         </div>
       ))}

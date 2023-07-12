@@ -1,7 +1,7 @@
 ---
 title: "Embracing Functional Programming in Python"
 date: "2023-07-08"
-path: "/blog/functional_programming"
+path: "/functional_python"
 ---
 
 # Introduction
