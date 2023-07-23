@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@350&display=swap');
 
 /* Applies to every page */
-body {
-    font-family: 'Roboto Slab', serif;
+html {
+    font-family: 'Roboto Slab', sans-serif;
+    background-color: var(--deepBlue);
 }
 
 /* For everything on the main page */
@@ -16,22 +17,24 @@ body {
 }
 
 .name {
-    color: #f30a49;
+    color: var(--date);
     width: 100%;
-    font-size: 23px;
-    margin-top: 2%;
+    font-size: 20px;
     letter-spacing: .15em;
-    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    margin-left: 15%;
+    /* text-align: center; */
 }
 
 .homeLinkText {
     color: white;
-    text-align: center;
+    font-size: 13px;
+    margin-lefT: 15%;
 }
 
 .homeLink {
-    color: #f30a49;
-    
+    color: var(--date);
 }
 
 .blogs {
@@ -40,8 +43,9 @@ body {
 }
 
 .blogTitle {
-    text-decoration: #7A7D7D dotted underline;
-    color: #DBDBDB;
+    /* text-decoration: #7A7D7D dotted underline; */
+    text-decoration: none;
+    color: var(--title);
     font-size: 30px;
     margin-top: 5%;
 }
@@ -49,17 +53,17 @@ body {
 .blogTitle:hover {
     /* color: #7A7D7D; */
     /* color: #F19953; Orange */
-    color: var(--blueGrey);
+    color: var(--cream);
 }
 
 .blogDate {
-    color: lightgrey;
+    color: var(--date);
 }
 
 /* For the actual blogs themselves */
 .blogPostTitle {
     margin-top: 5%;
-    color: var(--nameRed);
+    color: var(--date);
     text-align: center;
 }
 
@@ -85,7 +89,7 @@ hr {
 }
 
 .goNext {
-    color: white;
+    color: var(--white);
     text-decoration: none;
     /* margin-right: 10%; */
     text-align: center;
@@ -95,8 +99,28 @@ hr {
 
 .blogPostDate {
     text-align: center;
+    color: var(--title);
 }
 
 .blogPostContent {
     margin-left: 5%;
+    color: var(--text);
+    margin-right: 5%;
+}
+
+.blogPostContent h2, h3, h4 {
+    color: var(--cream);
+}
+
+.blogPostContent li::marker {
+    color: var(--red);
+}
+
+.blogPostContent strong {
+    color: var(--red);
+}
+
+:not(pre) > code[class*="language-"], pre[class*="language-"] {
+    background-color: black;
+    border-radius: 10px;
 }

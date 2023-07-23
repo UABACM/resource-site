@@ -28,6 +28,13 @@ export default function Template({
           className={styles.blogPostContent}
           dangerouslySetInnerHTML={{ __html: html }}
         />
+        <div className={styles.goingBack}>
+          <Link to="https://michaelgathara.org" className={styles.goBack}><span className={styles.leftArrow}>&lt;</span>  More Posts</Link>
+          {/* <Link to="https://michaelgathara.org" className={styles.goNext}>More Posts <span className={styles.leftArrow}>&gt;</span></Link> */}
+          <br></br>
+          <hr></hr>
+        </div>
+        <br></br><br></br>
       </div>
     </div>
   )

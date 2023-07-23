@@ -3,7 +3,19 @@ html {
 }
 
 :root {
-    --peach: #feaea3;
+    /* --peach: #feaea3; */
     --nameRed: #f30a49;
-    --blueGray: #799496;
+    --blueGray: #d5bdaf;
+    --sectionColor: red;
+    /* Another color pal */
+    --deepBlue: #1d3557;
+    --bgBlue: #457b9d;
+    --anotherBlue: #355070;
+    --lightBlue: #a8dadc;
+    --white: #f1faee;
+    --red: #e63946;
+    --cream: #e0afa0;
+    --title: #DBDBDB;
+    --date: #feaea3;
+    --text: #e9ecef;
 }

@@ -1,6 +1,6 @@
 :root {
   --border-radius: 4px;
-  --color-text: #333;
+  --color-text: #ffffff;
   --color-primary: #7026b9;
   --color-code-bg: #fff4db;
   --color-code: #8a6534;
@@ -36,7 +36,6 @@ html {
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  color: var(--color-text);
   font-family: sans-serif;
   font-family: var(--font-sans);
   font-weight: normal;
