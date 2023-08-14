@@ -19,11 +19,19 @@ const BlogPage = ({ data }) => (
     <p className={styles.homeLinkText}>By <Link to="https://uabacm.org" className={styles.homeLink}>UAB ACM</Link> & <Link to="https://sites.google.com/view/wituab/" className={styles.homeLink}>UAB WIT</Link></p>
     <div className={styles.blogs}>
       {data.allMarkdownRemark.edges.map(post => (
-        <div key={post.node.id}>
-          <Link to={post.node.frontmatter.path} id={styles.blogTitle} className={styles.blogTitle}>{post.node.frontmatter.title}</Link>
-          {/* <p className={styles.blogDate}>{post.node.frontmatter.date}</p> */}
-          {/* <hr /> */}
-        </div>
+        // <div key={post.node.id} className={styles.post}>
+        //   <Link to={post.node.frontmatter.path} id={styles.blogTitle} className={styles.blogTitle}>{post.node.frontmatter.title}</Link>
+        //   <p className={styles.blogDesc}>{post.node.frontmatter.desc}</p>
+        //   {/* <p className={styles.blogDate}>{post.node.frontmatter.date}</p> */}
+        //   {/* <hr /> */}
+        // </div>
+        <Link to={post.node.frontmatter.path} className={styles.post}>
+          <div>
+            <p id={styles.blogTitle}>{post.node.frontmatter.title}</p>
+            <hr></hr><br></br>
+            <p className={styles.blogDesc}>{post.node.frontmatter.desc}</p>
+          </div>
+        </Link>
       ))}
     </div>
   </div>
@@ -38,6 +46,7 @@ export const pageQuery = graphql`
           frontmatter {
             path
             title
+            desc
           }
         }
       }

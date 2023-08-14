@@ -18,7 +18,7 @@ export default function Template({
       <div className="blog-post">
         <h1 className={styles.blogPostTitle} id={styles.blogPostTitle}>{frontmatter.title}</h1>
         <div className={styles.goingBack}>
-          <Link to="https://michaelgathara.org" className={styles.goBack}><span className={styles.leftArrow}>&lt;</span>  More Posts</Link>
+          <Link to="https://uabcsclubs.org" className={styles.goBack}><span className={styles.leftArrow}>&lt;</span>  More Posts</Link>
           {/* <Link to="https://michaelgathara.org" className={styles.goNext}>More Posts <span className={styles.leftArrow}>&gt;</span></Link> */}
           <br></br>
           <hr></hr>
@@ -29,7 +29,7 @@ export default function Template({
           dangerouslySetInnerHTML={{ __html: html }}
         />
         <div className={styles.goingBack}>
-          <Link to="https://michaelgathara.org" className={styles.goBack}><span className={styles.leftArrow}>&lt;</span>  More Posts</Link>
+          <Link to="https://uabcsclubs.org" className={styles.goBack}><span className={styles.leftArrow}>&lt;</span>  More Posts</Link>
           {/* <Link to="https://michaelgathara.org" className={styles.goNext}>More Posts <span className={styles.leftArrow}>&gt;</span></Link> */}
           <br></br>
           <hr></hr>
@@ -45,9 +45,9 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $slug } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
         path
         title
+        desc
       }
     }
   }

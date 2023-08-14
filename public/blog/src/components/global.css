@@ -17,5 +17,14 @@ html {
     --cream: #e0afa0;
     --title: #DBDBDB;
     --date: #feaea3;
-    --text: #e9ecef;
+    
+    
+    /* After UAB CS Switch */
+    --UABGreen: #1E6B52;
+    --background: white;
+    --blogTitle: #F1F1F1;
+    --links: #e63946;
+    --UABACM: #173A5D;
+    --WIT: #4E2780;
+    --text: black;
 }
