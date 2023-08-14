@@ -15,9 +15,8 @@ export default function Template({
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   return (
-    // <Navigation></Navigation>
     <div className="blog-post-container">
-      <Navigation/>
+      {/* <Navigation/> */}
       <div className="blog-post">
         <h1 className={styles.blogPostTitle} id={styles.blogPostTitle}>{frontmatter.title}</h1>
         <h4 className={styles.blogPostDesc}>{frontmatter.desc}</h4>
