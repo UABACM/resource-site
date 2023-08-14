@@ -6,33 +6,22 @@ import Navigation from "../components/Navigation"
 const links = [
   {
     text: "Main",
-    url: "https://michaelgathara.com/",
-  },
-  {
-    text: "About",
-    url: "https://michaelgathara.com/about",
-  },
-  {
-    text: "Projects",
-    url: "https://michaelgathara.com/projects",
-  },
-  {
-    text: "Blog",
-    url: "https://michaelgathara.org",
+    url: "https://uabcsclubs.org/",
   },
 ]
+// https://sites.google.com/view/wituab/
 
 const BlogPage = ({ data }) => (
   <div className={styles.main}>
     <br></br>
     {/* <Navigation /> */}
-    <h1 className={styles.name}>A Taste Of Tech</h1>
-    <p className={styles.homeLinkText}><Link to="https://michaelgathara.com" className={styles.homeLink}>Michael Gathara's</Link> blog</p>
+    <h1 className={styles.name}>The UAB CS Wiki</h1>
+    <p className={styles.homeLinkText}>By <Link to="https://uabacm.org" className={styles.homeLink}>UAB ACM</Link> & <Link to="https://sites.google.com/view/wituab/" className={styles.homeLink}>UAB WIT</Link></p>
     <div className={styles.blogs}>
       {data.allMarkdownRemark.edges.map(post => (
         <div key={post.node.id}>
           <Link to={post.node.frontmatter.path} id={styles.blogTitle} className={styles.blogTitle}>{post.node.frontmatter.title}</Link>
-          <p className={styles.blogDate}>{post.node.frontmatter.date}</p>
+          {/* <p className={styles.blogDate}>{post.node.frontmatter.date}</p> */}
           {/* <hr /> */}
         </div>
       ))}
@@ -49,7 +38,6 @@ export const pageQuery = graphql`
           frontmatter {
             path
             title
-            date(formatString: "MMMM DD, YYYY")
           }
         }
       }

@@ -15,7 +15,6 @@ exports.createPages = async ({ graphql, actions }) => {
           node {
             frontmatter {
               title
-              date(formatString: "MMMM DD, YYYY")
               path
             }
             html
