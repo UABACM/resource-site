@@ -83,33 +83,5 @@ module.exports = {
         ],
       },
     },
-    // {
-    //   resolve: `gatsby-transformer-remark`,
-    //   options: {
-    //     plugins: [
-    //       {
-    //         resolve: `gatsby-remark-highlight-code`,
-    //         options: {
-    //           terminal: "ubuntu",
-    //           theme: "blackboard",
-    //         }
-    //       }
-    //     ]
-    //   }
-    // },
-    // {
-    //   resolve: `gatsby-plugin-mdx`,
-    //   options: {
-    //     gatsbyRemarkPlugins: [
-    //       {
-    //         resolve: `gatsby-remark-highlight-code`,
-    //         options: {
-    //           terminal: "ubuntu",
-    //           theme: "blackboard",
-    //         }
-    //       },
-    //     ],
-    //   },
-    // },
   ],
 }

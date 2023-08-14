@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import * as styles from "../components/nav.module.css"
 
 const Navigation = () => (
   <div>
@@ -30,9 +31,9 @@ const Navigation = () => (
         <li><Link to="https://michaelgathara.com/twitter" className="fa fa-twitter" target="_blank">Twitter</Link></li>
         <li><Link to="https://michaelgathara.com/github" className="fa fa-github" target="_blank">Github</Link></li>
       </ul>
-      <ul>
+      {/* <ul>
         <li><Link to="mailto:michael@michaelgathara.com?subject=Web" className="fa fa-envelope">Email</Link></li>
-      </ul>
+      </ul> */}
       <br/>
     </nav>
     <div className="mobileNavigation"></div>

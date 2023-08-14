@@ -34,10 +34,10 @@ exports.createPages = async ({ graphql, actions }) => {
       path: edge.node.frontmatter.path,
       component: blogPostTemplate,
       context: {
-        slug: edge.node.frontmatter.path, 
+        slug: edge.node.frontmatter.path,
       },
     })
   })
-  
+
 
 }

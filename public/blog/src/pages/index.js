@@ -17,6 +17,7 @@ const BlogPage = ({ data }) => (
     {/* <Navigation /> */}
     <h1 className={styles.name}>The UAB CS Wiki</h1>
     <p className={styles.homeLinkText}>By <Link to="https://uabacm.org" className={styles.homeLink}>UAB ACM</Link> & <Link to="https://sites.google.com/view/wituab/" className={styles.homeLink}>UAB WIT</Link></p>
+    <p className={styles.homeLinkText}>Whilst currently a work in progress, The UAB CS Wiki </p>
     <div className={styles.blogs}>
       {data.allMarkdownRemark.edges.map(post => (
         // <div key={post.node.id} className={styles.post}>
