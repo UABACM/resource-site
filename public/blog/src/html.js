@@ -10,14 +10,13 @@ export default class HTML extends React.Component {
             <meta name="description" content="A wiki of resources for UAB CS students"/>
             <meta property="og:image" content="src/images/logo.png" />
             <link rel="stylesheet" href="src/components/blog.module.css"/>
-            <meta name="keywords"
-            content="UAB" />
+            <meta name="keywords" content="UAB, UAB CS, UAB Computer Science" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <meta name="apple-mobile-web-app-status-bar-style" content="#000" />
             <meta name="theme-color" content="#000" />
             <meta name="author" content="Michael Gathara" />
             <meta property="og:image" content="https://michaelgathara.com/images/minimal.png"/>
-            <link rel="icon" href="https://michaelgathara.com/images/favicon.ico"/>
+            {/* <link rel="icon" href="https://michaelgathara.com/images/favicon.ico"/> */}
             
           {/* existing head component */}
           {this.props.headComponents}
