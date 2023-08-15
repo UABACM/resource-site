@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import * as styles from "../components/blog.module.css"
 import Navigation from "../components/Navigation"
+import '../components/nav.css';
 
 const links = [
   {
@@ -17,7 +18,7 @@ const BlogPage = ({ data }) => (
     {/* <Navigation /> */}
     <h1 className={styles.name}>The UAB CS Wiki</h1>
     <p className={styles.homeLinkText}>By <Link to="https://uabacm.org" className={styles.homeLink}>UAB ACM</Link> & <Link to="https://sites.google.com/view/wituab/" className={styles.homeLink}>UAB WIT</Link></p>
-    <p className={styles.homeLinkText}>Whilst currently a work in progress, The UAB CS Wiki </p>
+    <p className={styles.homeLinkText}>Whilst currently a work in progress, The UAB CS Wiki will act as a place for new and current Computer Science students to find resources to help as you learn.</p>
     <div className={styles.blogs}>
       {data.allMarkdownRemark.edges.map(post => (
         // <div key={post.node.id} className={styles.post}>
